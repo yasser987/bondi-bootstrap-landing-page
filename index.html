@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bondi</title>
+    <title>Bondi Bootstrap Landing Page | Yasser Elbanna</title>
+    <meta
+      name="description"
+      content="A responsive creative-agency landing page built with Bootstrap, HTML, and custom CSS."
+    />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/bondi.css" />
@@ -17,10 +21,10 @@
     />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg sticky-top" aria-label="Primary navigation">
       <div class="container align-items-center">
-        <a class="navbar-brand" href="#"
-          ><img src="images/logo.png" alt=""
+        <a class="navbar-brand" href="#home"
+          ><img src="images/logo.png" alt="Bondi"
         /></a>
         <button
           class="navbar-toggler"
@@ -36,21 +40,21 @@
         <div class="collapse navbar-collapse" id="main">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active p-lg-3" aria-current="page" href="#"
+              <a class="nav-link active p-lg-3" aria-current="page" href="#home"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Services</a>
+              <a class="nav-link p-lg-3" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Portfolio</a>
+              <a class="nav-link p-lg-3" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">About</a>
+              <a class="nav-link p-lg-3" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link p-lg-3" href="#">Contact</a>
+              <a class="nav-link p-lg-3" href="#contact">Contact</a>
             </li>
           </ul>
           <div class="search ps-3 pe-3 d-none d-lg-block">
@@ -64,7 +68,7 @@
         </div>
       </div>
     </nav>
-    <div class="landing d-flex justify-content-center align-items-center">
+    <div id="home" class="landing d-flex justify-content-center align-items-center">
       <div class="container text-center text-light">
         <h1>Taste The Creativity</h1>
         <p class="text-white-50 mb-5">We Make Awesome Graphic and Web Design</p>
@@ -75,7 +79,7 @@
         >
       </div>
     </div>
-    <div class="features text-center pt-5 pb-5">
+    <div id="services" class="features text-center pt-5 pb-5">
       <div class="container">
         <div class="main-title position-relative mt-5 mb-5">
           <img class="mb-4" src="images/title.png" alt="" />
@@ -129,7 +133,7 @@
         </div>
       </div>
     </div>
-    <div class="work pt-5 pb-5">
+    <div id="portfolio" class="work pt-5 pb-5">
       <div class="container">
         <div class="main-title position-relative mt-5 mb-5 text-center">
           <img class="mb-4" src="images/title.png" alt="" />
@@ -148,42 +152,42 @@
         <div class="row">
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-01.jpg" alt="" />
+              <img class="img-fluid" src="images/work-01.jpg" alt="Portfolio project preview 1" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-02.jpg" alt="" />
+              <img class="img-fluid" src="images/work-02.jpg" alt="Portfolio project preview 2" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-03.jpg" alt="" />
+              <img class="img-fluid" src="images/work-03.jpg" alt="Portfolio project preview 3" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-04.jpg" alt="" />
+              <img class="img-fluid" src="images/work-04.jpg" alt="Portfolio project preview 4" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-05.jpg" alt="" />
+              <img class="img-fluid" src="images/work-05.jpg" alt="Portfolio project preview 5" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-06.jpg" alt="" />
+              <img class="img-fluid" src="images/work-06.jpg" alt="Portfolio project preview 6" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-07.jpg" alt="" />
+              <img class="img-fluid" src="images/work-07.jpg" alt="Portfolio project preview 7" />
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="box mb-3 bg-white" data-work="Application">
-              <img class="img-fluid" src="images/work-08.jpg" alt="" />
+              <img class="img-fluid" src="images/work-08.jpg" alt="Portfolio project preview 8" />
             </div>
           </div>
         </div>
@@ -196,7 +200,7 @@
         </div>
       </div>
     </div>
-    <div class="stuff pt-5">
+    <div id="about" class="stuff pt-5">
       <div class="container">
         <div class="main-title position-relative mt-5 mb-5 text-center">
           <img class="mb-4" src="images/title.png" alt="" />
@@ -378,7 +382,7 @@
             <input
               class="w-100 border-0 bg-transparent"
               type="text"
-              placeholder="Enter Email Address"
+              placeholder="Enter email address" aria-label="Email address"
             />
           </div>
           <div class="col-md-6 col-lg-2">
@@ -396,7 +400,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-4">
             <div class="info">
-              <img class="mb-4 img-fluid" src="images/logo.png" alt="" />
+              <img class="mb-4 img-fluid" src="images/logo.png" alt="Bondi" />
               <p class="text-white-50 lh-md mb-4">
                 Pellentesque in ipsum id orci porta dapibus. Vivamus magna
                 justo, lacinia eget consectetur sed, convallis at tellus.
@@ -431,7 +435,7 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-4 mt-4 mt-lg-0">
-            <div class="contact">
+            <div id="contact" class="contact">
               <h3 class="text-light mb-4">Contact Us</h3>
               <p class="text-white-50 mb-5">
                 Get in touch with us via mail phone.We are waiting for your call
