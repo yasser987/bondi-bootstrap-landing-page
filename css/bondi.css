@@ -228,3 +228,31 @@ nav .container {
   color: var(--yellow);
 }
 /* End Footer */
+
+
+/* Accessibility refinements */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
